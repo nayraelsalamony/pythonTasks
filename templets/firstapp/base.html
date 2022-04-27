@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 70%;
+          margin-left: 300px;
+        }
+    
+        td,
+        th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+    
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+      </style>
+</head>
+<body>
+    {% include 'firstapp/header.html' %}
+    {% block title_block %}
+    {% endblock %}
+    {% block main_block %}
+    {% endblock %}
+    {% include 'firstapp/footer.html' %}
+</body>
+</html>
